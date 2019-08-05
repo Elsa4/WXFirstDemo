@@ -1,0 +1,168 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: rgb(236, 38, 38);
+}
+
+.usermotto {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+/* //////////////////////////////////////////////////////////////////////// */
+.selection{
+  border-bottom: 5px solid #ddd;
+}
+
+.header{
+  border-left-width: 2rpx;
+  border-left-style: solid;
+  border-left-color: limegreen;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.text-all{
+  color: green;
+  font-size: 12px;
+}
+
+/*
+display：flex 弹性布局
+配合属性
+1、flex-direction：row：水平排列 row-reverse：水平翻转排列
+column：竖直排列 column-reverse：竖直翻转排列
+2、flex-wrap ：nowrap（不换行，默认值） wrap（换行） wrap-reverse（与wrap的效果相反）
+
+1、display:none 不显示
+2、display:inline 行内显示
+3、display:block（[块内]容器模式） 换行显示
+4、display:inline-block 行内显示
+注：
+1、display:inline和display:inline-block 虽然显示效果是一样的。
+不同点：display:inline设置宽、高无效 display:inline-block设置宽、高有效
+2、display:block 设置宽、高有效
+*/
+
+/*
+
+justify-content：
+center 居中
+flex-start 靠左边
+flex-end 靠右边
+space-around 每个项目两侧的间隔相等，项目之间的间隔比项目与边框的间隔大一倍
+space-between 两端对齐，项目间隔相等
+space-evenly 项目在主轴上均匀分布，间距一样
+
+align-items 属性定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式。
+
+align-item align-self同理
+
+justify-content 用于设置或检索弹性盒子元素在主轴（横轴）方向上的对齐方式。
+*/
+
+.content{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.content-item{
+  height: 450rpx;
+  width: 45%;
+  background-color: goldenrod;
+  margin: 5rpx;
+  position: relative;
+}
+
+.content-item image{
+  width: 100%;
+  height: 100%;
+}
+
+.content-items{
+ 
+  position: absolute;
+  background: -webkit-linear-gradient(bottom,rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0));
+  height: 125rpx;
+  width: 100%;
+  bottom: 0rpx;
+  flex-direction: row;
+  display: flex;
+}
+
+.content-item-text{
+  width: 120rpx;
+  font-size: 25rpx;
+  color: white;
+   margin-top: 75rpx;
+   margin-bottom:0rpx;
+}
+
+.content-item-button{
+  font-size: 12px;
+  width: 160rpx;
+  margin-right: 0rpx;
+  margin-top: 60rpx;
+  margin-bottom:5rpx;
+  border-radius: 1rpx;
+}
+
+.content-item1{
+  font-size: 30rpx;
+  height: 500rpx;
+  margin-left: 10rpx;
+  margin-top: 5rpx;
+  position: relative;
+}
+
+.content-item1-img { 
+   width: 100%;
+  height: 70%;
+}
+
+.zhengwen{
+ font-size: 25rpx;
+ color: hsl(327, 49%, 70%);
+ display: flex;
+
+}
+
+.content1-selection{
+  height: 100rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  display: flex;
+  align-items:center;
+}
+
+.bg1{
+  background-color: yellow;
+  color: coral;
+}
+
+.bg2{
+  background-color: rgb(119, 0, 255);
+  color: rgb(255, 80, 80);
+}
