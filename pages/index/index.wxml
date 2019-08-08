@@ -1,3 +1,4 @@
+
 <!--index.wxml-->
 <view class="container">
   <view class="selection">
@@ -42,4 +43,7 @@
            </view>
       </view>
   </view>
+
+    <tabbar tabbar="{{tabbar}}"></tabbar>
+
 

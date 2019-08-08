@@ -40,6 +40,9 @@ Page({
     // })
   },
 
+  onLoad: function () {
+    app.editTabbar();
+  }
 
   // wx.navigateTo({
   //     url: '../test/test?id=1&page=4',  //跳转页面的路径，可带参数 ？隔开，不同参数用 & 分隔；相对路径，不需要.wxml后缀

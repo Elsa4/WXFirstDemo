@@ -1,5 +1,7 @@
 {
   "navigationBarTitleText": "登录",
-  "usingComponents": {},
+  "usingComponents": {
+     "tabbar": "../../pages/tabbar/tabbar"
+  },
   "navigationBarBackgroundColor": "#913"
   }

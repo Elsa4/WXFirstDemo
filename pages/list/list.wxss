@@ -1,0 +1,55 @@
+
+.page-body{
+  height: 80%;
+}
+
+.page-title{
+  padding: 30rpx;
+  color: red
+}
+
+
+.item{
+  display: flex;
+  width:100%;
+  height: 200rpx;
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+
+}
+
+.poster{
+  width: 200rpx;
+  height: 200rpx;
+  
+}
+
+.meta{
+  display: block;
+  margin-left: 30rpx;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+}
+
+.title{
+  width: 100rpx;
+  height:50rpx;
+  font-size: 40rpx;
+  color: black;
+}
+
+.sub-title{
+    display: block;
+  color: gray;
+}
+
+.artists{
+  color: rgb(207, 44, 44);
+}
+
+.rating{
+  color:green;
+  /* border-radius: 20rpx;
+  background-color: rebeccapurple; */
+
+}

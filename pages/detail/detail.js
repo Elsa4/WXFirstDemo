@@ -1,4 +1,5 @@
 
+const app = getApp()
 
 Page({
 
@@ -9,6 +10,9 @@ Page({
     imgWrap: ['../../images/avatar.png', '../../images/img1.png', '../../images/img2.png', '../../images/avatar.png', '../../images/img1.png', '../../images/img2.png']
   },
 
+  onLoad: function () {
+    app.editTabbar();
+  }
   /**
    * 生命周期函数--监听页面加载
    */

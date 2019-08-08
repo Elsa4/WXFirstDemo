@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "listPage",
-  "usingComponents": {}
+  "usingComponents": {
+    "tabbar": "../../pages/tabbar/tabbar"
+  }
 }

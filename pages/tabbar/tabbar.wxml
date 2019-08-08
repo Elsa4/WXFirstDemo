@@ -1,0 +1,9 @@
+<view class='tabbar_box' style='background-color:{{tabbar.backgroundColor}}'>
+<!-- 此处用到了循环，里面的数据动态获取 -->
+  <block wx:for="{{tabbar.list}}" wx:key="{{item.pagePath}}">
+    <navigator class="tabbar_nav" url="{{item.pagePath}}" style="color:{{item.selected ? tabbar.selectedColor : tabbar.color}}" open-type="switchTab">
+      <icon class="icon {{item.iconPath}}"></icon>
+      <text>{{item.text}}</text>
+    </navigator>
+  </block>
+</view>

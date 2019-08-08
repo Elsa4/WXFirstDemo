@@ -12,5 +12,24 @@
     "navigationBarTitleText": "FirstDemo",
     "navigationBarTextStyle": "black"
   },
-  "sitemapLocation": "sitemap.json"
+
+"tabBar": {
+  "list": [
+    {
+      "pagePath": "pages/login/login"
+    },
+    {
+      "pagePath": "pages/detail/detail"
+    },
+    {
+      "pagePath": "pages/index/index"
+    },
+    {
+      "pagePath": "pages/list/list"
+    },
+    {
+      "pagePath": "pages/logs/logs"
+    }
+  ]
+}
 }

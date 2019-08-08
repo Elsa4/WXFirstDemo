@@ -12,7 +12,7 @@
 }
 
 .text{
-  width: 150rpx;
+  width: 180rpx;
 height: 80rpx;
 display:flex;
 align-items:center;
@@ -63,3 +63,4 @@ padding-left: 10rpx;
     margin-left:0rpx;
     width:225rpx;
 }
+

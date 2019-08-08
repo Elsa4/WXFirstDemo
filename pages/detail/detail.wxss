@@ -62,3 +62,10 @@ justify-content:flex-start;
   width: 40rpx;
   height: 40rpx;
 }
+
+.bg_red{
+/* //透明度变化 */
+ opacity: 0.9;
+ /* 缩放 */
+   transform: scale(1.2,1.2);
+   }

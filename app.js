@@ -41,6 +41,27 @@
 
 const request = require('./utils/request.js')
 App({
+  onLaunch:function(){
+    wx.hideTabBar({
+    });
+  },
+
+  editTabbar: function () {
+    let tabbar = this.globalData.tabBar;
+    let currentPages = getCurrentPages();
+    let _this = currentPages[currentPages.length - 1];
+    let pagePath = _this.route;
+    (pagePath.indexOf('/') != 0) && (pagePath = '/' + pagePath);
+    for (let i in tabbar.list) {
+      tabbar.list[i].selected = false;
+      (tabbar.list[i].pagePath == pagePath) && (tabbar.list[i].selected = true);
+    }
+    _this.setData({
+      tabbar: tabbar
+    });
+  },
+
+
   request: request,
   getUserInfo: function (cb) {
     var that = this
@@ -50,6 +71,7 @@ App({
       //调用登录接口
       wx.login({
         success: function () {
+        
           wx.getUserInfo({
             success: function (res) {
               that.globalData.userInfo = res.userInfo
@@ -65,7 +87,40 @@ App({
    */
   apiUrl: 'https://www.geekxz.com',
   globalData: {
-    userInfo: null
+    userInfo: null,
+   
+    tabBar: {
+      "backgroundColor": "#ffffff",
+      "color": "#3d3d3d",
+      "selectedColor": "#ea3f40",
+      "list": [
+        {
+          "pagePath": "/pages/login/login",
+          "iconPath": "avatar",
+          "text": "首页"
+        },
+        {
+          "pagePath": "/pages/detail/detail",
+          "iconPath": "/images/img1.png",
+          "text": "搜索"
+        },
+        {
+          "pagePath": "/pages/index/index",
+          "iconPath": "./images/avatar",
+          "text": "赚红包"
+        },
+        {
+          "pagePath": "/pages/list/list",
+          "iconPath": "../../images/avatar.png",
+          "text": "电影"
+        },
+        {
+          "pagePath": "/pages/logs/logs",
+          "iconPath": "../../images/img2.png",
+          "text": "我的"
+        }
+      ]
+    }
   }
 })
 
