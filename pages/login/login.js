@@ -17,9 +17,12 @@ Page({
   },
 
   submit:function(e){
-    wx.navigateTo({
-      url: '../../pages/index/index',
-    })
+    // wx.navigateTo({
+    //   url: '../../pages/index/index',
+    // })
+    wx.switchTab({
+      url:'../../pages/index/index'
+      })
     // console.log(e),
     //   console.log(e.detail),
     // console.log(e.detail.value.uname),

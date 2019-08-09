@@ -1,0 +1,70 @@
+
+
+
+ <!-- 红色背景  -->
+<view>
+    <image class="image-background" src='../../images/redBackground.png' mode='scaleFill'></image>
+   
+</view>
+
+<view class="image-background-title">
+      <text >{{status}}</text>
+      <image class="image-background-img" src='../../images/trade.png' mode='scaleFill'></image>
+</view>
+
+<!-- 两个卡片信息 -->
+<view class="card-detail">
+
+<view class="card-detail-titleView">
+         <image class="card-detail-img" src='http://www.th-leasing.com/dev/service/upload/series/692/20190618/156085177530.jpg' mode='scaleFill'></image>
+   <text class="card-detail-title">奥迪 A4L 2018款 30周年版 30 TFSI 进取版</text>
+</view>
+
+<view class="card-detail-priceView">
+   <text class="card-detail-priceView-title">商家指导价：19.05万</text>
+     <button class="card-detail-button">更多需求</button>
+  </view>
+</view>
+
+
+<view class="card-gray-detail">
+   <text class="card-gray-detail-title">已有10名经销商参与报价，您的出价成功被选中</text>
+   <view class="card-gray-detail-priceView">
+   <text>最终车价</text>
+   <text class="price">18.33万</text>
+   </view>
+</view>
+
+<!-- 列表信息 -->
+<view class="card-bottom-gray"></view>
+
+
+<view class = 'page-body'>
+  <view class = 'details' wx:for='{{detailData}}' wx:key="id">
+     <view class='details-item'>
+     <text>{{item.title}}</text>
+     <text class='detail'>{{item.detail}}</text>
+     </view>
+  <view class='details-lineView'></view>
+  </view>
+</view>
+
+<view class="card-bottom-gray"></view>
+
+<view class = 'page-body'>
+  <view class = 'details' wx:for='{{contactData}}' wx:key="id">
+     <view class='details-item'>
+     <text>{{item.title}}</text>
+     <text class='detail'>{{item.detail}}</text>
+     </view>
+  <view class='details-lineView'></view>
+  </view>
+</view>
+
+<!-- 底部 -->
+<view class="card-bottom-gray"></view>
+
+<view class="bottomView">
+     <button class="bottomView-button" bindtap="clickMe">标记为完成</button>
+     <button class="bottomView-button2"  bindtap="clickMe">联系客户</button>
+</view>

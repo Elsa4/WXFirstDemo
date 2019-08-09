@@ -12,14 +12,17 @@
   box-sizing: border-box;
   padding-top: 12rpx;
 }
+
 .tabbar_box text{
   font-size: 30rpx;
 }
+
 .tabbar_box .icon{
   font-size: 45rpx;
   width: 60rpx;
   height: 60rpx;
 }
+
 .tabbar_box .tabbar_nav{
   display: flex;
   flex-direction: column;

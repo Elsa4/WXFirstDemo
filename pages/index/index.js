@@ -5,10 +5,10 @@ Page({
   data: {
     bg:true,
     imgUrls: [
-      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      'http://www.th-leasing.com/dev/service/upload/series/692/20190618/156085177530.jpg',
       'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
       'http://www.th-leasing.com/dev/service/upload/series/692/20190618/156085177530.jpg',
-      'http://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=图片&hs=0&pn=3&spn=0&di=157080&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&ie=utf-8&oe=utf-8&cl=2&lm=-1&cs=2174909441%2C2495215020&os=4239414841%2C105189092&simid=0%2C0&adpicid=0&lpn=0&ln=30&fr=ala&fm=&sme=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fpic25.nipic.com%2F20121112%2F9252150_150552938000_2.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bgtrtv_z%26e3Bv54AzdH3Ffi5oAzdH3F0al88dm_z%26e3Bip4s&gsm=0&islist=&querylist='
+      'http://www.th-leasing.com/dev/service/upload/series/692/20190618/156085177530.jpg'
     ],
     contentItems: ['', '', '', '','',''],
     listItems: ['', '', '', '', '', '', ''],

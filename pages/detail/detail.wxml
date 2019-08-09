@@ -3,16 +3,17 @@
     <tabbar tabbar="{{tabbar}}"></tabbar>
 
   <!-- 轮播图 -->
+    <view class="container">
   <view class="slide">
-  <swiper indicator-dots='true' auto-play='true' interval="800" duration="1000">
+  <swiper indicator-dots='true' autoplay='true' interval="3000" duration="1000">
   <block wx:for='{{imgWrap}}' wx:key='key'>
   <swiper-item>
-  <!-- <image src="{{item.image.large}}" class='slide-image' width='355' height='150' mode='aspectFill'/> -->
-    <image src="{{item}}" class='slide-image' width='355' height='150' mode='aspectFill'/>
+     <image src="{{item}}" class='slide-image' width='355' height='150' mode='aspectFill'/> 
   </swiper-item>
-  </block>
+  </block> 
   </swiper>
   </view>
+</view> 
 
   <!-- 标题 -->
   <view class='title-wrap'>
@@ -23,7 +24,7 @@
     <!-- 榜单部分 -->
 <view class="board">
   <!-- 正在热映 -->
-    <navigator url='../list/list?type=in_theaters&title=正在热映' hover-class='none'>
+    <navigator url='../carDetail/carDetail?type=in_theaters&title=正在热映' hover-class='none'>
       <view class='board-item'>
         <text>正在热映</text>
         <image src='../../images/arrowright.png' mode='aspectFill'></image>

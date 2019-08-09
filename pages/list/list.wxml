@@ -2,11 +2,16 @@
 
 <!--等待框-->
   <loading hidden="{{!loading}}">加载中...</loading>
+
   <!--顶部标题栏-->
   <view class='page-header'>
     <text class='page-title'>{{title}}</text>
   </view>
   <tabbar tabbar="{{tabbar}}"></tabbar>
+
+  <view class='buttonView'>
+    <button class='buttons' wx:for='{{buttons}}' wx:key='id' form-type='load'>{{buttons[index]}}</button>
+  </view>
 
 <view class='page-body' wx:for="{{list}}" wx:key="id">
     <!--类型判断,显示不同的数据-->
@@ -18,7 +23,7 @@
             <text class='title'>{{item.title}}</text>
             <text class='sub-title'>{{item.original_title}}({{item.year}})</text>
             <view class='artists'>
-              <text>导演：</text>
+              <text>已有出价：</text>
               <text wx:for="{{item.directors}}" wx:key="id">{{item.name}}</text>
             </view>
             <view class='rating'>

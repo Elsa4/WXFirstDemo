@@ -112,10 +112,10 @@ App({
         {
           "pagePath": "/pages/list/list",
           "iconPath": "../../images/avatar.png",
-          "text": "电影"
+          "text": "订单"
         },
         {
-          "pagePath": "/pages/logs/logs",
+          "pagePath": "/pages/carDetail/carDetail",
           "iconPath": "../../images/img2.png",
           "text": "我的"
         }
