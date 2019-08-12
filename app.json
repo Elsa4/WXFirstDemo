@@ -1,11 +1,12 @@
 {
   "pages": [
     "pages/login/login",
-    "pages/index/index",
-    "pages/logs/logs",
     "pages/detail/detail",
+    "pages/index/index",
     "pages/list/list",
-    "pages/carDetail/carDetail"
+    "pages/carDetail/carDetail",
+    "pages/logs/logs",
+    "pages/values/values"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -32,5 +33,5 @@
       }
     ]
   },
-  "sitemapLocation": "sitemap65.json"
+  "sitemapLocation": "sitemap.json"
 }

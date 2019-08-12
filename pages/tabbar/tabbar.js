@@ -8,7 +8,5 @@ Component({
       type: Object
       
     }
-  },
-
-  
+  }
 })

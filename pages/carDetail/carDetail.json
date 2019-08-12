@@ -1,5 +1,6 @@
 {
   "navigationBarTitleText": "询价详情",
   "usingComponents": {
+    "tabbar": "../../pages/tabbar/tabbar"
   }
 }
