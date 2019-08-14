@@ -1,6 +1,6 @@
 
 .page-body{
-  height: 80%;
+  margin-bottom: 88rpx;
 }
 
 .page-title{

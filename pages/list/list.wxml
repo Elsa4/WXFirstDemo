@@ -7,7 +7,6 @@
   <view class='page-header'>
     <text class='page-title'>{{title}}</text>
   </view>
-  <tabbar tabbar="{{tabbar}}"></tabbar>
 
   <view class='buttonView'>
     <button class='buttons' wx:for='{{buttons}}' wx:key='id' form-type='load'>{{buttons[index]}}</button>

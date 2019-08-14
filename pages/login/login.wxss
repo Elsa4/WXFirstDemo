@@ -55,12 +55,12 @@ padding-left: 10rpx;
    font-size:30rpx;
    display: flex;
    align-items:center;
-   width:170rpx;
+   width:190rpx;
   height:60rpx;
 }
 
 .protocol1{
     margin-left:0rpx;
-    width:225rpx;
+    width:245rpx;
 }
 

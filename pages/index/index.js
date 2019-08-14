@@ -41,7 +41,6 @@ Page({
   },
 
   onLoad: function () {
-    app.editTabbar();
   }
 
   // wx.navigateTo({

@@ -1,6 +1,9 @@
 {
   "navigationBarTitleText": "",
+    "navigationBarBackgroundColor": "#FFFFFF",
+      
   "usingComponents": {
     "tabbar": "../../pages/tabbar/tabbar"
   }
+  
 }

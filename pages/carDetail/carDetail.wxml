@@ -1,7 +1,9 @@
 
 
+
  <!-- 红色背景  -->
- <view class="page">
+ <view class="page"> 
+ 
 <view>
     <image class="image-background" src='../../images/redBackground.png' mode='scaleFill'></image>
    
@@ -22,9 +24,10 @@
 
 <view class="card-detail-priceView">
    <text class="card-detail-priceView-title">商家指导价：19.05万</text>
-     <button class="card-detail-button" bindtap="carDetail">更多需求</button>
+     <button class="card-detail-button">更多需求</button>
   </view>
 </view>
+
 
 <view class="card-gray-detail">
    <text class="card-gray-detail-title">已有10名经销商参与报价，您的出价成功被选中</text>
@@ -36,7 +39,6 @@
 
 <!-- 列表信息 -->
 <view class="card-bottom-gray"></view>
-
 
 <view class = 'page-body'>
   <view class = 'details' wx:for='{{detailData}}' wx:key="id">
@@ -68,5 +70,4 @@
      <button class="bottomView-button2"  bindtap="clickMe">联系客户</button>
 </view>
 
-</view>
-    <tabbar tabbar="{{tabbar}}"></tabbar>
+ </view>

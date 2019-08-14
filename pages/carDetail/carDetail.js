@@ -1,4 +1,5 @@
 const app = getApp()
+var request = require('../../utils/request.js');
 
 Page({
   data: {
@@ -73,7 +74,7 @@ Page({
         detail: '12345678901'
       }],
       //页面栈 B页面返回的值
-       info:[],
+       info1:[],
        //3.本地存储传值 wx.setStorage wx.getStorage()
     info2: {
       'name': '周杰伦',
@@ -84,14 +85,65 @@ Page({
   
   },
 
+// 网络数据获取
+  loadNetData: function () {
+    var url = app.globalData.m_base_url + "m.member.message.list.php";
+    var params = {
+      "tokenid": app.globalData.tokenid,
+      "tokenuserid": app.globalData.tokenuserid,
+      "topcompanyid": app.globalData.topcompanyid,
+      "memberid": app.globalData.memberid,
+    }
+    console.log(url, params);
+  //   //@todo 网络请求API数据
+    request.requestGetApi(url, params, this, this.completeFun)
+  },
+
+  /**
+   * 接口调用成功处理
+   */
+  completeFun:function(retdata, selfObj) {
+    console.log('eeeeeeeeeeeeee');
+    console.log(retdata);
+
+    if(retdata.stat == 0) {
+
+
+
+    } else {
+
+      console.log('fffffffffffffail');
+      console.log(JSON.stringify(res));
+    }
+  },
+  // /**
+  //  * 接口调用成功处理
+  //  */
+  // successFun: function (res, selfObj) {
+  //   selfObj.setData({
+  //     expressData: res,
+  //   }),
+  //   console.log('网络数据requestttsuccessttttt');
+  //     console.log(expressData)
+  // },
+  // /**
+  //  * 接口调用失败处理
+  //  */
+  // failFun: function (res, selfObj) {
+  //   console.log('网络数据requestttfailttttt');
+  //   console.log('failFun', res)
+  // },
+
   onLoad: function (e) {
-    app.editTabbar();
+    // 手机号登陆取memberid和tokenid，无账号自动申请
+    // request.userPhoneNumLogin();
+    this.loadNetData();
     // 3.本地存储传值
     wx.setStorage({
       key: 'information',
       data: that.data.info2,
       success(res) {//等同于success:function(res),es6的写法，es6在小程序中都可以使用，推荐使用
-       
+
       }
     })   
   },
@@ -110,21 +162,21 @@ Page({
 
 //上一界面返回的数据
   onShow: function (e){
-    console.log('ssssttttB页面返回的值');
+    // console.log('ssssttttB页面返回的值');
 
     var that = this;
     var pages = getCurrentPages();
     var currpage = pages[pages.length - 1];
-    console.log(currpage.data.info);
+    // console.log(currpage.data.info1);
 
 
-    if (currpage.data.info){
+    if (!currpage.data.info1){
       that.setData({
-        'info': e.info
+        'info1': e.info
       })
     }
     
-   console.log('ssssB页面返回的值');
-    console.log(e.info);
+  //  console.log('ssssB页面返回的值');
+    console.log(info1);
   }
 })

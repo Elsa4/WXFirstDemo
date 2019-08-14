@@ -9,10 +9,19 @@ Page({
     user_id: '',
     user_name:'',//url 传值
     //页面栈方式传递
-
     name: '周杰伦',
     phone: '123456789',
-    address: '台北'
+    address: '台北',
+
+    time: '12:01'
+
+  },
+
+  bindTimeChange: function (e) {
+    this.setData({
+      time: e.detail.value
+    }),
+    console.log(time)
   },
 
   /**
@@ -107,10 +116,10 @@ Page({
             name: that.data.name,
             phone: that.data.phone,
             address: that.data.address
-          }
+          };
           // console.log(info)
           prevPage.setData({
-            info: info
+            info1: info
           })
         }
       })

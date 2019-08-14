@@ -36,6 +36,7 @@ function requestGetApi(url, params, sourceObj, successFun, failFun, completeFun)
  * @param  {Function} completeFun 接口调用结束的回调函数(调用成功、失败都会执行)
  */
 function requestApi(url, params, method, sourceObj, successFun, failFun, completeFun) {
+  console.log(url);
   if (method == 'POST') {
     var contentType = 'application/x-www-form-urlencoded'
   } else {
@@ -57,7 +58,43 @@ function requestApi(url, params, method, sourceObj, successFun, failFun, complet
     }
   })
 }
+
+
+ /**
+   * m.mini.member.login
+   * 取得memberid tokenid membernm memberviplevel
+   */
+function userPhoneNumLogin() {
+  var params = {
+    // "phone": wx.getStorageSync("phone")
+    "phone": "18717832163"
+  };
+  var url = "http://www.th-leasing.com/test/service/base/api/m.mini.member.login.php";
+  requestGetApi(url, params, this, this.completeFun)
+}
+
+function completeFun(retdata, selfObj) {
+  console.log(retdata);
+   console.log('eeeeeeeeeeeeee');
+  console.log(url, params);
+  if (retdata.data.stat == 0) {
+
+    // console.log(retdata.data.data);
+    getApp().globalData.memberid = retdata.data.data.tokenuserid;
+    getApp().globalData.tokenid = retdata.data.data.tokenid;
+    getApp().globalData.membernm = retdata.data.data.membernm;
+    getApp().globalData.memberviplevel = retdata.data.data.viplevel;
+
+  } else {
+    // TODO 改成Toast报错框
+    console.log(JSON.stringify(res));
+  }
+}
+
+
 module.exports = {
   requestPostApi,
-  requestGetApi
+  requestGetApi,
+  userPhoneNumLogin
+
 }

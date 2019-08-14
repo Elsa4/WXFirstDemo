@@ -1,7 +1,4 @@
   
-  
-    <tabbar tabbar="{{tabbar}}"></tabbar>
-
   <!-- 轮播图 -->
     <view class="container">
   <view class="slide">

@@ -61,7 +61,7 @@ Page({
   },
 
   onLoad:function(){
-    app.editTabbar();
+    // app.editTabbar();
   }
 
 })
