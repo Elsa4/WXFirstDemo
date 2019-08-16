@@ -73,7 +73,7 @@ data: {
     {
       id: '3000',
       images: {
-        small: '../../images/img2.png'
+        small: '../../images/img1.png'
       },
       title: '哪吒闹海',
       original_title: '乾坤圈，混天绫',

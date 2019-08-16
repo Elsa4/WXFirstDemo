@@ -9,7 +9,6 @@ Page({
   },
 
   onLoad: function (e) {
-    app.editTabbar();
     
     this.setData({
     

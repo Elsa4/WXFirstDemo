@@ -24,6 +24,28 @@ Page({
     console.log(time)
   },
 
+  mapClick:function() {
+    wx.navigateTo({
+      url: '../../pages/map/map',
+    })
+
+
+
+    // wx.getLocation({
+    //   type: 'wgs84',
+    //   success: function (res) {
+    //     var latitude = res.latitude
+    //     var longitude = res.longitude
+    //     var speed = res.speed
+    //     var accuracy = res.accuracy
+    //   }
+    // }),
+    // console.log('123456789');
+    // console.log(latitude)
+  },
+
+
+
   /**
    * 生命周期函数--监听页面加载
    */

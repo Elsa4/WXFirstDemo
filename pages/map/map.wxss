@@ -1,0 +1,85 @@
+
+page {
+  height: 100%;
+}
+ 
+.view {
+  width: 100%;
+  height: 100%;
+}
+ 
+map {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+/***********************************************/
+ /* 整个界面的设置 */
+.container {
+  /* background-color:green; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height:100%;
+}
+
+/* 每个界面默认都有一个header 使其不随scroll上移 */
+.header{
+  line-height: 120rpx;
+  flex: 0 0 120rpx; /* 不放大不缩小固定100rpx */
+}
+
+.search {
+  background-color: rgb(154, 135, 255);
+  height: 120rpx;
+  width: 100%;
+}
+
+.searchBtn{
+  background-color: white;
+  margin: 0rpx 50rpx 0 50rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  text-align: center;
+
+}
+
+.listView{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20rpx 20rpx 10rpx 20rpx;
+}
+
+ .title{
+   margin-top: 10rpx;
+   color: black;
+  text-align: left;
+  font-size:32rpx;
+  font-family:PingFangSC-Regular;
+  font-weight:400;
+
+} 
+
+.address{
+  font-size: 25rpx;
+  margin-top: 10rpx;
+  color: gray
+}
+
+.contentView{
+   flex: 1;
+  position: relative;
+} 
+ 
+
+ /* relative 区域上移动 */
+.scroll{ 
+  position: absolute;
+   /* left: 0;
+  right: 0; 
+  top: 0;
+   bottom: 0; */
+  
+}

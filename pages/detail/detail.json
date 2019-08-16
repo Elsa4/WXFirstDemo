@@ -1,6 +1,4 @@
 {
   "navigationBarTitleText": "detailPage",
-  "usingComponents": {
-    "tabbar": "../../pages/tabbar/tabbar"
-  }
+  "usingComponents": {}
 }

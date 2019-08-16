@@ -7,3 +7,5 @@
     <button type="default">时间选择器</button>
 </picker>
 </view>
+
+ <button class="card-detail-button" bindtap="mapClick">map</button>

@@ -24,7 +24,7 @@
 
 <view class="card-detail-priceView">
    <text class="card-detail-priceView-title">商家指导价：19.05万</text>
-     <button class="card-detail-button">更多需求</button>
+     <button class="card-detail-button" bindtap="carDetail">更多需求</button>
   </view>
 </view>
 

@@ -1,8 +1,4 @@
 
-.page-body{
-  margin-bottom: 88rpx;
-}
-
 .page-title{
   padding: 30rpx;
   color: black;
@@ -12,23 +8,21 @@
 
 .item{
   display: flex;
-  width:100%;
   height: 280rpx;
-  margin-top: 25rpx;
-  margin-left: 30rpx;
-
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
 }
 
 .poster{
   width: 280rpx;
   height: 280rpx;
-  
 }
 
 .meta{
   display: block;
-  margin-left: 30rpx;
   margin-top: 10rpx;
+  margin-left: 20rpx;
   font-size: 30rpx;
 }
 
@@ -37,11 +31,6 @@
   height:50rpx;
   font-size: 30rpx;
   color: black;
-  /* margin-right: 10rpx;
-  margin-top: 10rpx; */
-  padding-right: 20rpx;
-
-
 }
 
 .sub-title{
@@ -59,26 +48,24 @@
 
 .rating{
   color:green;
-    margin-top: 10rpx;
-
+  margin-top: 10rpx;
   /* border-radius: 20rpx;
   background-color: rebeccapurple; */
 
 }
 
 .buttonView{
-  width: 100%;
   height: 90rpx;
   display: flex;
 margin: 20rpx 10rpx 0rpx 10rpx;
-
 }
 
 .buttons{
-  /* width: 140rpx; */
   height: 70rpx;
-  font-size: 27rpx;
-  /* margin-left: 10rpx;
-  margin-right: 10rpx;   */
-
+  font-size: 30rpx;
+  background-color: white;
 }
+
+.buttons::after{
+  border: none;
+} 
